@@ -11,4 +11,10 @@ public struct OrganizationUserResponse: Codable {
     public let organization: OrganizationResponseDTO
     public let id: UUID
     public let isAdmin: Bool
+    
+    public init(organization: OrganizationResponseDTO, id: UUID, isAdmin: Bool) {
+        self.organization = organization
+        self.id = id
+        self.isAdmin = isAdmin
+    }
 }
