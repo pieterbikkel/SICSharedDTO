@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct OrganizationUserResponse: Codable {
+public struct OrganizationUserResponseDTO: Codable {
     public let organization: OrganizationResponseDTO
     public let id: UUID
     public let isAdmin: Bool
